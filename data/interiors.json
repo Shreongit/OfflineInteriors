@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 1,
+  "gameMode": "StoryModeOnly",
+  "description": "Teleport links for supported Story Mode interiors and an elevator access point that lack a usable normal route. Online apartment interiors are intentionally excluded.",
+  "interiors": [
+    {
+      "id": "morgue-teleport",
+      "name": "the Los Santos County Morgue",
+      "entrance": {
+        "x": 247.0606,
+        "y": -1371.8202,
+        "z": 23.5378
+      },
+      "exit": {
+        "x": 240.9777,
+        "y": -1379.108,
+        "z": 32.7417
+      },
+      "entranceHeading": 145.0,
+      "interiorId": 0,
+      "allowAmbientPeds": false,
+      "maxAmbientPeds": 0,
+      "requiredIpls": [
+        "coroner_int_on"
+      ]
+    },
+    {
+      "id": "solomon-office-teleport",
+      "name": "Solomon's Office",
+      "entrance": {
+        "x": -1011.697,
+        "y": -480.1367,
+        "z": 38.9756
+      },
+      "exit": {
+        "x": -1002.9615,
+        "y": -477.8428,
+        "z": 49.0271
+      },
+      "entranceHeading": 120.0,
+      "interiorId": 0,
+      "allowAmbientPeds": false,
+      "maxAmbientPeds": 0,
+      "requiredIpls": [
+        "v_58_sol_office"
+      ]
+    },
+    {
+      "id": "union-depository-vault-teleport",
+      "name": "the Union Depository Vault",
+      "entrance": {
+        "x": 10.3384,
+        "y": -671.1154,
+        "z": 32.4495
+      },
+      "exit": {
+        "x": -0.1434,
+        "y": -705.9488,
+        "z": 15.1312
+      },
+      "entranceHeading": 240.0,
+      "interiorId": 0,
+      "allowAmbientPeds": false,
+      "maxAmbientPeds": 0,
+      "requiredIpls": [
+        "finbank"
+      ]
+    },
+    {
+      "id": "humane-labs-elevator",
+      "name": "the Humane Labs elevator",
+      "entrance": {
+        "x": 3540.6599,
+        "y": 3675.5315,
+        "z": 19.9918
+      },
+      "exit": {
+        "x": 3540.6272,
+        "y": 3675.385,
+        "z": 27.1211
+      },
+      "entranceHeading": 170.0,
+      "interiorId": 0,
+      "allowAmbientPeds": false,
+      "maxAmbientPeds": 0,
+      "requiredIpls": [
+        "v_lab"
+      ]
+    }
+  ]
+}

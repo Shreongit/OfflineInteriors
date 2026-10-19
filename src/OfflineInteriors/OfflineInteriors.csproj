@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net48</TargetFramework>
+        <LangVersion>latest</LangVersion>
+        <Nullable>disable</Nullable>
+        <ImplicitUsings>disable</ImplicitUsings>
+        <AssemblyName>OfflineInteriors</AssemblyName>
+        <RootNamespace>OfflineInteriors</RootNamespace>
+        <OutputType>Library</OutputType>
+        <GenerateAssemblyInfo>true</GenerateAssemblyInfo>
+        <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <GtaVPath Condition="'$(GtaVPath)' == ''">$(ProgramFiles)\Rockstar Games\Grand Theft Auto V</GtaVPath>
+        <ScriptHookVDotNetPath Condition="'$(ScriptHookVDotNetPath)' == ''">$(GtaVPath)\scripts</ScriptHookVDotNetPath>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Reference Include="ScriptHookVDotNet3">
+            <HintPath>$(ScriptHookVDotNetPath)\ScriptHookVDotNet3.dll</HintPath>
+            <Private>false</Private>
+        </Reference>
+    </ItemGroup>
+
+</Project>
